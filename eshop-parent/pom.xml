@@ -13,6 +13,7 @@
         <module>../eshop-common-util</module>
         <module>../eshop-service-util</module>
         <module>../eshop-web-util</module>
+
         <module>../eshop-user-service</module>
 
     </modules>
