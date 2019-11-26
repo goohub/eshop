@@ -4,10 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>eshop-parent</artifactId>
-        <groupId>cn.xmut</groupId>
+        <groupId>cn.xmut.eshop</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../eshop-parent/pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>eshop-user-service</artifactId>
     <name>eshop-user-service</name>
@@ -26,11 +27,10 @@
         </dependency>
         <dependency>
             <groupId>cn.xmut.eshop</groupId>
-            <artifactId>service-util</artifactId>
+            <artifactId>eshop-service-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-
     </dependencies>
+
 
 </project>

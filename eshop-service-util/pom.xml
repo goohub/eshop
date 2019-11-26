@@ -9,13 +9,13 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>service-util</artifactId>
+    <artifactId>eshop-service-util</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>cn.xmut.eshop</groupId>
-            <artifactId>common-util</artifactId>
+            <artifactId>eshop-common-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
