@@ -21,13 +21,15 @@ public class AttrController {
     private AttrService attrService;
 
     @PostMapping("/baseInfo/list")
-    public List<PmsBaseAttrInfo> listBaseAttrInfo(@RequestParam("catalog3Id") String catalog3Id){
-        return attrService.listBaseAttrInfo(catalog3Id);
+    public R listBaseAttrInfo(@RequestParam("catalog3Id") String catalog3Id){
+        List<PmsBaseAttrInfo> baseAttrInfos = attrService.listBaseAttrInfo(catalog3Id);
+        return R.ok(baseAttrInfos);
     }
 
     @PostMapping("/baseValue/list")
-    public List<PmsBaseAttrValue> listBaseAttrValue(@RequestParam("attrInfoId") String attrInfoId){
-        return attrService.listBaseAttrValue(attrInfoId);
+    public R listBaseAttrValue(@RequestParam("attrInfoId") String attrInfoId){
+        List<PmsBaseAttrValue> baseAttrValues = attrService.listBaseAttrValue(attrInfoId);
+        return R.ok(baseAttrValues);
     }
 
     @PostMapping("/baseInfo")

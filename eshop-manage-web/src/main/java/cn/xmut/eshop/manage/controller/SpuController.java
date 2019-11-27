@@ -20,8 +20,9 @@ public class SpuController {
     private SpuService spuService;
 
     @PostMapping("/list")
-    public List<PmsProductInfo> listSpuInfo(@RequestParam("catalog3Id") String catalog3Id){
-        return spuService.listSpuInfo(catalog3Id);
+    public R listSpuInfo(@RequestParam("catalog3Id") String catalog3Id){
+        List<PmsProductInfo> spuInfos = spuService.listSpuInfo(catalog3Id);
+        return R.ok(spuInfos);
     }
 
     @PostMapping("/info")
