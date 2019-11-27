@@ -15,6 +15,9 @@
         <module>../eshop-web-util</module>
 
         <module>../eshop-user-service</module>
+        <module>../eshop-user-web</module>
+        <module>../eshop-manage-web</module>
+        <module>../eshop-manage-service</module>
 
     </modules>
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xmut.eshop.manage.mapper.SpuSaleAttrInfoMapper">
+
+    <insert id="insertBatch">
+        insert into pms_product_sale_attr
+        (product_id, sale_attr_id, sale_attr_name)
+        values
+        <foreach collection="spuSaleAttrInfos" item="spuSaleAttrInfo" separator=",">
+            (#{spuSaleAttrInfo.productId}, #{spuSaleAttrInfo.saleAttrId}, #{spuSaleAttrInfo,saleAttrName})
+        </foreach>
+    </insert>
+
+</mapper>
